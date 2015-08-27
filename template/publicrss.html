@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/publicrss.css" type="text/css">
+<title>PublicRSS</title>
+</head>
+
+
+<body>
+<p>
+PublicRSS
+</p>
+<form action="#" method="post">
+<div><input type="text" name="t_sitename" placeholder="Slashdot" required>
+<input type="text" name="t_siteurl" size="50" placeholder="http://slashdot.jp/slashdotjp.rss" required></div>
+<div><input type="submit" name="add_site" value="Add RSS site" id="addbutton"></div>
+</form>
+<p>
+</p>
+<form action="#" method="post">
+<input type="submit" name="del_site" value="Delete checked RSS site" id="delbutton">
+{% for feed in tp_feed %}
+<div>
+<input type="checkbox" name={{feed.siteurl}}>
+<a href="{{feed.siteurl}}" target="_blank">{{feed.sitename}}</a>
+<input type="submit" name="get_item" value={{feed.siteurl}}  class="urlbutton">
+</div>
+{% endfor %}
+</form>
+</body>
+</html>

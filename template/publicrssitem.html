@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>PublicRSS Item</title>
+</head>
+
+
+<body>
+<p>
+<A href="../publicrss">PublicRSS</a>
+</p>
+
+<p>
+{{tp_feed.publisher}}
+<br>
+{{tp_feed.title}}
+</p>
+
+{% for feeditem in tp_feeditem %}
+<div>
+<a href="{{feeditem.link}}" target="_blank">{{feeditem.title}}</a>
+</div>
+{% endfor %}
+</body>
+</html>

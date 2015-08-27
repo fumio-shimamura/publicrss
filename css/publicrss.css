@@ -1,0 +1,15 @@
+DIV#main		{ background-color: #f0f8ff; }
+span.point01	{ color: #ff0000; font-size: 150%; }
+
+#addbutton	{ -webkit-border-radius: 3px;
+                      -moz-border-radius: 3px;
+                      background: #ccccff;
+                      color: #000000; }
+
+#delbutton	{ -webkit-border-radius: 3px;
+                      -moz-border-radius: 3px;
+                      background: #ffcccc;
+                      color: #000000; }
+
+.urlbutton	{ width: 100px; 
+                      color: #666666; }
